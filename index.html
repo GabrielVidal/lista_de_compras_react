@@ -19,7 +19,7 @@
                 var products = this.state.data;
                 products.push(product);
                 this.setState({data: products});
-                // TODO: salvar no server
+            
             },
             getInitialState: function() {
                 return {data: []};
@@ -84,7 +84,7 @@
                     return false;
                 }
                 this.props.onProductSubmit({name: name, ammount: ammount});
-                //TODO: validação, salvar no server
+
                 this.refs.name.getDOMNode().value = '';
                 this.refs.ammount.getDOMNode().value = '';
                 return false;
@@ -111,4 +111,3 @@
         </script>
     </body>
 </html>
-
